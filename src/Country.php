@@ -63,11 +63,8 @@ class Country
 	public function find($iso2)
 	{
 		$result = null;
-		$countries = array();
-		$json = $this->_getJson();
-		foreach ($json as $key => $value) {
-			$countries[$key] = $value;
-		}
+		$countries = $this->getList();
+		$iso2 = strtoupper($iso2);
 		if(array_key_exists($iso2, $countries)) $result = $countries[$iso2];
 		return $result;
 	}
