@@ -1,0 +1,27 @@
+{
+    "name": "pewe/php-country-codes",
+    "description": "country codes wrapper with php",
+    "type": "library, wrapper, lumen-packages",
+    "require": {
+        "php": ">=5.3"
+    },
+    "autoload": {
+        "psr-4": {
+          "Pewe\\CountryCodes\\": "src"
+        }
+    },
+    "keywords": [
+        "lumen",
+        "laravel",
+        "api",
+        "wrapper",
+        "country-io"
+    ],
+    "authors": [
+        {
+            "name": "Permadi Wibisono",
+            "email": "mbapewe@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
